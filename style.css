@@ -147,7 +147,22 @@ section {
   border: solid #5B6DCD 10px;
 }
 
+/* PROFILE */
 
+#profile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pic-container{
+  max-width: 50%;
+  border: 5px solid red;
+}
+.profile-pic {
+  max-width: 100%; 
+  object-fit: cover;
+  border-radius: 50px; 
+}
 
 
  /* ICONS */
