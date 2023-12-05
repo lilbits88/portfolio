@@ -38,10 +38,12 @@
     <div class="pic-container">
       <img class="profile-pic"  src="images/portfoliopic.jpeg" alt="profile picture" >
     </div>
-    <div class="section_text">
-      <p class="section_text_p1">Hello I'm</p>
+    <div class="profile-container">
+      <div class="title-container">
+      <p class="small-title">Hello I'm</p>
       <p class="title">Jonathan Anleu</p>
-      <p class="section_text_p2">FrontEnd Developer</p>
+      <p class="small-title">FrontEnd Developer</p>
+      </div>
       <div class="btn-container">
         <button 
         onclick="window.open('')">
@@ -50,7 +52,7 @@
         onclick="location.href= './#contact'">
         Contact Info</button>
       </div>
-      <div id="socials-container">
+      <div class="socials-container">
         <a href="https://github.com/lilbits88" target="_blank">
           <i class="fa-brands fa-github icon" alt="Github icon"></i>
         </a>
@@ -61,16 +63,18 @@
     </div>
   </section>
   <section id="about">
-    <h1 class="title">About Me</h1>
+    <div class="title-container">
+      <p class="small-title"> Get To Know More</p>
+      <h1 class="title">About Me</h1>
+    </div>
+    <div class="pic-container">
+      <img
+      class="about-pic"
+        src="images/aboutMePic.jpeg"
+        alt="about me picture"
+      />
+    </div>
     <div class="section-container">
-      <div>
-        <img
-          src="images/aboutMePic.jpeg"
-          alt="about me picture"
-          height="300px"
-          width="300px"
-        />
-      </div>
         <div class="text-container">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
@@ -81,22 +85,20 @@
             reiciendis ea magnam? Nulla, impedit fuga!
           </p>
           <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
                 <i class="fa-solid fa-computer icon"></i>
                 <h3>Experience</h3>
                 <p>2+ years <br />Frontend Development</p>
-              </div>
-            </div>
+          </div>           
         </div>
       </div>
     </div>
   </section>
   <section id="projects">
+    <p class="small-title">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
       <div class="about-containers">
-        <div class="details-container color-container">
+        <div class="about-details-container color-container">
           <div class="article-container">
             <img
               src="./assets/project-1.png"
@@ -118,7 +120,7 @@
             </button>
           </div>
         </div>
-        <div class="details-container color-container">
+        <div class="about-details-container color-container">
           <div class="article-container">
             <img
               src="./assets/project-2.png"
@@ -140,7 +142,7 @@
             </button>
           </div>
         </div>
-        <div class="details-container color-container">
+        <div class="about-details-container color-container">
           <div class="article-container">
             <img
               src="./assets/project-3.png"
@@ -166,6 +168,7 @@
     </div>
   </section>
   <section id="contact">
+    <p class="small-title">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
