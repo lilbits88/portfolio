@@ -11,7 +11,8 @@ body {
   font-family: 'Poppins', sans-serif;
 } 
 p{
-  color: rgb(85, 85, 85)
+  display: block;
+  color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
@@ -185,9 +186,10 @@ section {
 }
 
 .title-container {
-  display: flex;
+  display: flex;  
   flex-direction: column;
   justify-content: center;
+  
 }
 
 .socials-container {
@@ -231,6 +233,7 @@ section {
 
 #about {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -259,6 +262,8 @@ section {
 
  .about-pic {
   border-radius: 2rem;
+  max-width: 100%; 
+  object-fit: cover;
   height: 400px;
   width: 400px;
   margin: auto 0;
