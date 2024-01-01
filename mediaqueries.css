@@ -11,26 +11,9 @@
   #burger-nav {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
   #profile,
   .section-container {
     display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .about-containers {
-    margin-top: 0;
   }
 }
 
@@ -38,15 +21,6 @@
   #about{
     display: flex;
     flex-direction: column;
-  }
-  .about-pic{
-    width: 100%
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer {
-    margin-bottom: 2rem;
   }
   .contact-info-container p,
   .nav-links li a {
@@ -59,9 +33,6 @@
     display: flex;
     gap: 1rem;
     text-align: center;
-  }
-  .title {
-    font-size: 2rem;
   }
   
 } 
