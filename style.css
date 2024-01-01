@@ -236,9 +236,8 @@ section {
   justify-content: center;
   flex-direction: column;
   padding: 1rem;
-  flex: 1;
   background: whitesmoke;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: rgb(167, 167, 167) 0.1rem solid;
 }
 .about-section-container {
@@ -249,10 +248,13 @@ section {
   margin: 1rem 2rem;
 }
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 1rem;
   max-width: 100%; 
   object-fit: cover;
   margin: auto 0;
+}
+.about-me {
+  margin-bottom: 2rem;
 }
 .experience-container{
   border: 5px yellow solid;
@@ -274,8 +276,19 @@ section {
   justify-content: center;
   align-items: center;
 }
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: .5rem;
+  padding: 1rem;
+  background: whitesmoke;
+  border-radius: 1rem;
+  border: rgb(167, 167, 167) 0.1rem solid;
+}
 .project-img {
-  border-radius: 2rem;
+  border-radius: 1rem;
   width: 90%;
   height: 90%;
 }
@@ -297,8 +310,9 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem;
+  margin: .3rem;
   background: whitesmoke;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: rgb(167, 167, 167) 0.1rem solid;
 }
 .contact-info-container {
