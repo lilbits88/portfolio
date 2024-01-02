@@ -14,41 +14,33 @@ body {
 p{
   color: rgb(85, 85, 85);
 }
-
-/* TRANSITION */
-
 a,
 button {
-  transition: all 300ms ease;
+  transition: all 500ms ease;
 }
 
 /* DESKTOP NAV */
 nav,
 .nav-links {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  height: 15vh;
-}
-nav {
   justify-content: space-around;
-  align-items: center;
+  margin: 1rem;
 }
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 a{
   display: block;
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
 }
 a:hover {
   color: grey;
   text-decoration: underline;
-  text-underline-offset: .5rem;
+  text-underline-offset: .3rem;
   text-decoration-color: rgb(101,101,101)
 }
 .logo{
@@ -66,6 +58,7 @@ a:hover {
 
 .burger-menu {
   position: relative;
+  left: 45%;
   display: inline-block;
 }
 
@@ -144,25 +137,13 @@ a:hover {
   transform: none;
 }
 
-/* SECTIONS */
-
-section {
-  display: flex;
-  flex-direction: column;
-  border: solid #5B6DCD 10px;
-  max-width: 100%;
-}
-
 /* TITLE */
 
 .title-container p {
   display: flex;  
   flex-direction: column;
   justify-content: center;
-}
-.small-title {
-  text-align: center;
-
+  align-items: center;
 }
 .title{
   font-size: 3rem;
@@ -170,16 +151,17 @@ section {
 }
 
 /* PROFILE SECTION */
-
 #profile {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .profile-pic-container{
   overflow: hidden;
   border: black solid 5px;
 }
 .profile-pic {
-  width: 310px;
+  width: 350px;
 }
 .profile-container{
   display: flex;
@@ -200,13 +182,11 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  border: green solid 5px;
  }
  button {
   font-weight: 600;
-  transition: all 300ms ease;
-  padding: .7rem;
-  width: 8rem;
+  padding: .5rem;
+  width: 6rem;
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.2rem solid;
  }
@@ -221,33 +201,22 @@ section {
 #about {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-}
-.about-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 1rem;
-  background: whitesmoke;
-  border-radius: 1rem;
-  border: rgb(167, 167, 167) 0.1rem solid;
 }
 .about-pic-container{
-  margin: 1rem 2rem;
+  width: 350px;
+  margin: 1rem;
 }
 .about-pic {
   border-radius: 1rem;
   max-width: 100%; 
-  object-fit: cover;
-  margin: auto 0;
 }
 .text-container {
   margin: 1rem;
   padding: 1rem;
 }
 .about-me {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
  /* PROJECTS SECTION */
 
@@ -267,7 +236,7 @@ section {
   padding: 1rem;
   background: whitesmoke;
   border-radius: 1rem;
-  border: rgb(167, 167, 167) 0.1rem solid;
+  border: rgb(167, 167, 167) 0.2rem solid;
 }
 .project-img {
   border-radius: 1rem;
@@ -283,34 +252,30 @@ section {
 
 #contact {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  margin: .3rem;
   background: whitesmoke;
   border-radius: 1rem;
-  border: rgb(167, 167, 167) 0.1rem solid;
+  border: rgb(167, 167, 167) 0.2rem solid;
 }
 .contact-info-container {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin: .5rem;
+  gap: .5rem;
+  margin: 1rem;
 }
 .contact-icon {
   cursor: default;
 }
 /* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-footer p {
+footer{
   text-align: center;
+  margin-bottom: 1rem;
 }
+
 

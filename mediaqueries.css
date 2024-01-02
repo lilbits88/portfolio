@@ -11,27 +11,12 @@
   #burger-nav {
     display: flex;
   }
-  #profile,
-  .section-container {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 600px) {
-  #about{
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
   .nav-links {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     text-align: center;
   }
   
