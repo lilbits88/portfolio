@@ -1,23 +1,19 @@
- @media screen and (max-width: 1400px) {
-  .about-containers {
-    flex-wrap: wrap;
-  }
+ @media screen and (max-width: 1440px) {
+ 
+
  }
 
 @media screen and (max-width: 1200px) {
+  
+ 
+ 
+}
+
+@media screen and (max-width: 600px) {
   #desktop-nav {
     display: none;
   }
   #burger-nav {
     display: flex;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .nav-links {
-    display: flex;
-    gap: .5rem;
-    text-align: center;
-  }
-  
 } 
