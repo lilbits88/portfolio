@@ -23,7 +23,7 @@ nav,
 .nav-links {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 1rem;
 }
 .nav-links {
@@ -148,7 +148,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin: 5rem .5rem;
+  margin: 4rem;
 }
 .profile-pic-container{
   overflow: hidden;
@@ -171,6 +171,7 @@ a:hover {
 }
 .title-container{
   margin: 1rem;
+  width: 100%;
 }
 .socials-container {
   display: flex;
@@ -205,17 +206,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: .5rem;
 }
 .about-title-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 .about-pic-container{
   overflow: hidden;
-  width: 300px;
+  width: 275px;
   height: 350px;
   border: rgb(177, 177, 177) 0.2rem solid;
   border-radius: 10%;
@@ -242,29 +241,21 @@ a:hover {
   color: rgb(177, 177, 177);
   margin-bottom: 5px;
 }
-.about-list{
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  list-style: none;
-}
  /* PROJECTS SECTION */
 
 #projects {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: .5rem;
 }
 .project-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: .5rem;
-  padding: 1rem;
+  margin: 1rem;
+  padding: 2rem;
   background: black;
   border-radius: 1rem;
   border: rgb(177, 177, 177) 0.2rem solid;
@@ -283,19 +274,21 @@ a:hover {
 
 #contact {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 2rem .5rem;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  margin: 0 1rem;
   background: black;
   border-radius: 1rem;
   border: rgb(177, 177, 177) 0.2rem solid;
 }
-.contact-info-container {
+.contact-info {
   display: flex;
   align-items: center;
   gap: .5rem;

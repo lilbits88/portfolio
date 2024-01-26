@@ -1,15 +1,23 @@
- @media screen and (max-width: 1440px) {
- 
-
- }
-
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1024px) {
+  #profile{
+    gap: 5rem;
+  }
+  #about{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   
- 
- 
+  .about-pic-container{
+    width: 350px;
+    height: 500px;
+  }
 }
 
+
+
 @media screen and (max-width: 600px) {
+  
   #desktop-nav {
     display: none;
   }
@@ -17,3 +25,4 @@
     display: flex;
   }
 } 
+
