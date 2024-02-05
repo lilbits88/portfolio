@@ -12,6 +12,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: black;
+  font-size: 18px;
 } 
 a,
 button {
@@ -26,6 +27,9 @@ nav,
   justify-content: space-evenly;
   margin: 1rem;
 }
+.logo {
+  font-size: 2rem;
+}
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -37,9 +41,10 @@ a{
   text-decoration: none;
 }
 a:hover {
+  color: white;
   text-decoration: underline;
   text-underline-offset: .3rem;
-  text-decoration-color: rgb(177, 177, 177);
+  text-decoration-color: white;
 }
 
 /* BURGER MENU */
@@ -67,7 +72,7 @@ a:hover {
 .burger-icon span {
   width: 100%;
   height: 2px;
-  transition: all 0.3 ease-in-out;
+  transition: all 300ms ease-in-out;
   border: rgb(177, 177, 177) .1rem solid;
 }
 
@@ -79,7 +84,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition:  all 0.3 ease-in-out;
+  transition:  all 300ms ease-in-out;
 }
 
 .menu-links a {
@@ -89,14 +94,15 @@ a:hover {
   font-size: 1.1rem;
   color: rgb(177, 177, 177);
   text-decoration: none;
-  transition:  all 0.3 ease-in-out;
+  transition:  all 300ms ease-in-out;
 }
 
 .menu-links a:hover {
-  color: rgb(177, 177, 177);
+  color: white;
   text-decoration: underline;
-  text-underline-offset: .5rem;
-  text-decoration-color: rgb(177, 177, 177);
+  text-underline-offset: .3rem;
+  text-decoration-color: white;
+  transition:  all 300ms ease-in-out;
 }
 
 .menu-links li{
@@ -137,23 +143,31 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
+.small-title {
+  font-weight: 700;
+  color: rgb(177, 177, 177);
+}
 .title{
   font-size: 3rem;
   text-align: center;
+  color: rgb(177, 177, 177);
 }
 
 /* PROFILE SECTION */
 #profile {
+  background: rgba(67, 153, 250, 0.562);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
-  margin: 4rem;
+  margin: 2rem 0;
+  padding: 1rem 0;
 }
 .profile-pic-container{
   overflow: hidden;
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border: rgb(177, 177, 177) 0.2rem solid;
   border-radius: 50%;
 }
@@ -167,6 +181,7 @@ a:hover {
 .profile-container{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 .title-container{
@@ -192,7 +207,7 @@ a:hover {
   border-radius: 2rem;
   color: white;
   background: rgb(53,53,53);
-  border: rgb(121,121,121) 0.2rem solid;
+  border: rgb(177, 177, 177) 0.2rem solid;
  }
   button:hover {
   cursor: pointer;
@@ -204,9 +219,12 @@ a:hover {
 
 #about {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
+
 .about-title-container{
   display: flex;
   flex-direction: column;
@@ -232,6 +250,7 @@ a:hover {
   align-items: center;
   margin: 1rem;
   padding: 1rem;
+  color: rgb(177, 177, 177);
 }
 .about-me {
   font-weight: 400;
@@ -304,3 +323,81 @@ footer{
 }
 
 
+@media screen and (min-width: 1024px) {
+  nav {
+    gap: 6rem;
+  }
+  #profile{
+    gap: 8rem;
+  }
+  .profile-pic-container {
+    width: 275px;
+    height: 275px;
+  }
+  .about-title-container {
+    width: 100%;
+  }
+  .about-pic-container {
+    max-width: 50%;
+    width: 355px;
+    height: 450px;
+  }
+  .text-container {
+    max-width: 30%;
+    margin-left: 3rem;
+  }
+  /* ABOUT SECTION 
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.about-title-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-pic-container{
+  overflow: hidden;
+  width: 275px;
+  height: 350px;
+  border: rgb(177, 177, 177) 0.2rem solid;
+  border-radius: 10%;
+  margin-top: 1rem;
+}
+.about-pic {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+.about-me {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.about-title{
+  color: rgb(177, 177, 177);
+  margin-bottom: 5px;
+} */
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+  #desktop-nav {
+    display: none;
+  }
+  #burger-nav {
+    display: flex;
+  }
+} 
