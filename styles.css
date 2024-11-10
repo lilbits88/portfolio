@@ -160,6 +160,7 @@ ul li a:hover::after {
 h1 {
   margin: 0;
 }
+
 .description {
   margin: 0;
   font-size: 16px;
@@ -171,8 +172,58 @@ button {
   text-transform: uppercase;
   color: #f9faf8;
   width: 100px;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 2px white solid;
   padding: 6px;
   cursor: pointer;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-title {
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.project {
+  max-width: 150px;
+}
+
+.projects-container {
+  display: flex;
+  gap: 3rem;
+  text-align: center;
+}
+
+.project-frame {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+
+}
+
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #e5e7eb;
+}
+
+.quotes {
+  font-size: 36px;
+  color: #1f2937;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
