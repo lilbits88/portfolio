@@ -184,10 +184,10 @@ button {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin: 2rem 0;
 }
 
 .section-title {
-  margin-top: 2rem;
   text-transform: uppercase;
 }
 
@@ -211,10 +211,18 @@ button {
 
 #testimonials {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
   background-color: #e5e7eb;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
 }
 
 .quotes {
@@ -226,4 +234,28 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  width: 600px;
+  height: 70px;
+  background-color: #3882f6;
+  border-radius: 10px;
+  margin: 2rem 0;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.contact-container h2 {
+  color: #f9faf8;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+  height: 70px;
 }
